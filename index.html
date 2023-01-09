@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Document</title>
+  </head>
+  <body
+    class="bg-[#7c2ae8] grid h-screen content-center overflow-hidden font-[poppins]"
+  >
+    <div class="my-3 w-fit mx-auto bg-white text-black py-4 px-10 rounded-md">
+      <div class="my-3 text-center text-4xl">
+        <h1 class="">Stop watch</h1>
+      </div>
+      <div class="text-4xl">
+        <!-- watch time show -->
+        <div class="text-center space-x-3">
+          <button
+            id="hour"
+            class="bg-[#c8e1f9] p-2 rounded-md text-[#4570ba] cursor-text"
+            title="Hour"
+          >
+            00
+          </button>
+          <button
+            id="minute"
+            class="bg-[#c8e1f9] p-2 rounded-md text-[#4570ba] cursor-text"
+            title="minute"
+          >
+            00
+          </button>
+          <button
+            id="second"
+            class="bg-[#c8e1f9] p-2 rounded-md text-[#4570ba] cursor-text"
+            title="second"
+          >
+            00
+          </button>
+          <audio src="./assets/sound/last 2.mp3"></audio>
+        </div>
+        <!-- watch control button -->
+        <div class="text-2xl text-white text-center py-4">
+          <button
+            id="start"
+            class="bg-blue-500 py-1 hover:bg-[#7c2ae8] hover:text-white px-3 rounded-md"
+          >
+            Start
+          </button>
+          <span id="extra" class="hidden space-x-6">
+            <button
+              id="stop"
+              class="bg-blue-500 py-1 hover:bg-[#7c2ae8] hover:text-white px-3 rounded-md"
+            ></button>
+            <button
+              id="reset"
+              class="bg-blue-500 py-1 hover:bg-[#7c2ae8] hover:text-white px-3 rounded-md"
+            >
+              Reset
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
